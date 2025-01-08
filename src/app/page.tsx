@@ -1,3 +1,6 @@
+"use client";
+
+import { Trans } from "@lingui/react/macro";
 import Image from "next/image";
 
 export default function Home() {
@@ -14,13 +17,15 @@ export default function Home() {
         />
         <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
           <li className="mb-2">
-            Get started by editing{" "}
+            <Trans>Get started by editing</Trans>{" "}
             <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
               src/app/page.tsx
             </code>
             .
           </li>
-          <li>Save and see your changes instantly.</li>
+          <li>
+            <Trans>Save and see your changes instantly.</Trans>
+          </li>
         </ol>
 
         <div className="flex gap-4 items-center flex-col sm:flex-row">

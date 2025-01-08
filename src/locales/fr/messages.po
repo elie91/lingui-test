@@ -12,3 +12,11 @@ msgstr ""
 "Last-Translator: \n"
 "Language-Team: \n"
 "Plural-Forms: \n"
+
+#: src/app/page.tsx:18
+msgid "Get started by editing"
+msgstr "Commencez par éditer"
+
+#: src/app/page.tsx:25
+msgid "Save and see your changes instantly."
+msgstr "Enregistrez et voyez vos modifications instantanément."

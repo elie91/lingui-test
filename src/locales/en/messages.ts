@@ -1,1 +1,1 @@
-/*eslint-disable*/import type{Messages}from"@lingui/core";export const messages=JSON.parse("{}")as Messages;
+/*eslint-disable*/import type{Messages}from"@lingui/core";export const messages=JSON.parse("{\"QeKRmi\":[\"Get started by editing\"],\"pUIY8G\":[\"Save and see your changes instantly.\"]}")as Messages;
