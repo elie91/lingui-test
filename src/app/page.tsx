@@ -1,12 +1,15 @@
 "use client";
 
-import { Trans, useLingui } from "@lingui/react/macro";
+import { Plural, Trans, useLingui } from "@lingui/react/macro";
 import Image from "next/image";
 
 export default function Home() {
   const lastLogin = new Date("2022-01-01");
+  const name = "John Doe";
 
   const { i18n } = useLingui();
+
+  const messagesCount = 42 as number;
 
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
@@ -40,10 +43,20 @@ export default function Home() {
           </Trans>
         </p>
 
+        <footer>
+          <Trans>Last login on {i18n.date(lastLogin)}.</Trans>
+        </footer>
+
         <p>
-          <footer>
-            <Trans>Last login on {i18n.date(lastLogin)}.</Trans>
-          </footer>
+          <Plural
+            value={messagesCount}
+            one={`There's # message in your inbox, ${name}`}
+            other={
+              <Trans>
+                There are <strong>#</strong> messages in your inbox, {name}
+              </Trans>
+            }
+          />
         </p>
 
         <div className="flex gap-4 items-center flex-col sm:flex-row">
