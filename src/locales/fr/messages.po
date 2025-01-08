@@ -13,14 +13,19 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
-#: src/app/page.tsx:20
+#: src/app/page.tsx:24
 msgid "Get started by editing"
 msgstr "Commencez par éditer"
 
-#: src/app/page.tsx:27
+#. placeholder {0}: i18n.date(lastLogin)
+#: src/app/page.tsx:45
+msgid "Last login on {0}."
+msgstr "Dernière connexion le {0}."
+
+#: src/app/page.tsx:31
 msgid "Save and see your changes instantly."
 msgstr "Enregistrez et voyez vos modifications instantanément."
 
-#: src/app/page.tsx:32
+#: src/app/page.tsx:36
 msgid "See all <0>unread messages</0> or <1>mark them</1> as read."
 msgstr "Voir tous les <0>messages non lus</0> ou <1>les marquer</1> comme lus."

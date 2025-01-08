@@ -1,9 +1,13 @@
 "use client";
 
-import { Trans } from "@lingui/react/macro";
+import { Trans, useLingui } from "@lingui/react/macro";
 import Image from "next/image";
 
 export default function Home() {
+  const lastLogin = new Date("2022-01-01");
+
+  const { i18n } = useLingui();
+
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
@@ -34,6 +38,12 @@ export default function Home() {
             {" or "}
             <a onClick={() => {}}>mark them</a> as read.
           </Trans>
+        </p>
+
+        <p>
+          <footer>
+            <Trans>Last login on {i18n.date(lastLogin)}.</Trans>
+          </footer>
         </p>
 
         <div className="flex gap-4 items-center flex-col sm:flex-row">
