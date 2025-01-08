@@ -1,1 +1,1 @@
-/*eslint-disable*/import type{Messages}from"@lingui/core";export const messages=JSON.parse("{\"QeKRmi\":[\"Get started by editing\"],\"pUIY8G\":[\"Save and see your changes instantly.\"]}")as Messages;
+/*eslint-disable*/import type{Messages}from"@lingui/core";export const messages=JSON.parse("{\"QeKRmi\":[\"Get started by editing\"],\"pUIY8G\":[\"Save and see your changes instantly.\"],\"ctx8RA\":[\"See all <0>unread messages</0> or <1>mark them</1> as read.\"]}")as Messages;
