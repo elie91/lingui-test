@@ -18,6 +18,7 @@ msgid "{messagesCount, plural, one {There's # message in your inbox, {name}} oth
 msgstr "{messagesCount, plural, one {There's # message in your inbox, {name}} other {There are <0>#</0> messages in your inbox, {name}}}"
 
 #: src/app/page.tsx:27
+#: src/app/demo/page.tsx:20
 msgid "Get started by editing"
 msgstr "Get started by editing"
 
@@ -27,6 +28,7 @@ msgid "Last login on {0}."
 msgstr "Last login on {0}."
 
 #: src/app/page.tsx:34
+#: src/app/demo/page.tsx:27
 msgid "Save and see your changes instantly."
 msgstr "Save and see your changes instantly."
 
