@@ -15,7 +15,7 @@ i18n.load({
   es,
   de,
 });
-i18n.activate("fr");
+i18n.activate("en");
 
 export const LocaleProvider: React.FC<PropsWithChildren> = ({ children }) => {
   return <I18nProvider i18n={i18n}>{children}</I18nProvider>;
